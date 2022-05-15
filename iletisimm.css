@@ -1,0 +1,109 @@
+.jumbotron {
+    background: no-repeat center right fixed url(iletisim2.jpg);
+    background-size: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+body{
+    border: 20px double rgb(160, 154, 154) ;
+    background-color: rgb(194, 194, 194);
+        
+        text-align: center;
+       
+    
+    }
+
+
+
+
+
+.menu{
+    text-align: center;
+    
+    background: linear-gradient(124deg, rgba(34,193,195,1) 11%, rgba(201,209,114,1) 85%, rgba(219,230,38,1) 100%);
+
+   
+}
+
+
+
+.yazi::before{
+    content: attr(date-hide);
+    color:darkgreen;
+}
+
+.checkbox{
+    display: none;
+    background-color: darkgreen;
+
+}
+
+.checkbox:checked+.yazi::before{
+    content: attr(date-show);
+    color:darkgreen;
+
+}
+.checkbox:checked+.yazi+ .menu{
+    display: none; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.jumbotron .container {
+    position: relative;
+    top: 28%;
+    z-index: 4;
+    text-align: center;
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1280px;
+    padding: 40px 180px;
+}
+
+.jumbotron .container h1 {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #FFFFFF;
+    border-bottom-color: rgba(255,255,255,0.35);
+    display: inline-block;
+}
+
+.jumbotron .container > * {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.jumbotron h1{
+    font-size: 63px;
+}
+
+
+
+
+.jumbotron .container .lead {
+    font-size: 28px;
+}
+

@@ -1,0 +1,71 @@
+.jumbotron {
+    background: no-repeat center right fixed url(girisekrani2.jpg);
+    background-size: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+
+
+
+
+body{
+
+    text-align: center;
+    font-size: x-large;
+    border: 12px solid rgb(167, 167, 159); 
+    font-weight: 800;
+    background-color: rgb(201, 244, 231);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.jumbotron .container {
+    position: relative;
+    top: 28%;
+    z-index: 4;
+    text-align: center;
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1280px;
+    padding: 40px 180px;
+}
+
+.jumbotron .container h1 {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #FFFFFF;
+    border-bottom-color: rgba(255,255,255,0.35);
+    display: inline-block;
+}
+
+.jumbotron .container > * {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.jumbotron h1{
+    font-size: 63px;
+}
+
+
+
+
+.jumbotron .container .lead {
+    font-size: 28px;
+}
+

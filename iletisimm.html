@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8">
+
+<link rel="stylesheet" href="bootstrap.css">
+<link rel="stylesheet" href="iletisimm.css">
+    </head>
+    <body>
+        <div id="top" class="jumbotron" data-position="bottom right" style="height: 600px">
+            
+            <div class="container">
+                <h1>YASİN ÇAKIR</h1>
+                <p class="lead">İletişim Sayfası</p>
+            </div>
+
+
+
+        </div>
+
+
+
+
+    </div>
+
+    <input type="checkbox" id="cb" class="checkbox">
+    <label class="yazi" for="cb" date-show=" Menuyu Goster " date-hide="Menuyu Gizle ^"></label>
+
+    <div class="menu">
+
+     <a href="index.html">Anasayfa </a><br>
+     <a href="gaziantep.html">Gaziantep Sehri Tanitimi </a><br>
+     <a href="mirasimiz.html">Mirasimiz Sayfasi</a><br>
+     <a href="girisekrani.html">Giriş Ekranı </a><br>
+     <a href="havadurumu.html">Hava Durumu </a>
+
+    </div>
+
+
+        <h1>İletişim Sayfasi</h1>
+        <script>
+            function validateForm(){
+                var x=document.forms["iletisimsayfa"]["isim"].value;
+                var y=document.forms["iletisimsayfa"]["soyisim"].value;
+                var z=document.forms["iletisimsayfa"]["telefonno"].value
+                var k=document.forms["iletisimsayfa"]["yorumsatiri"].value
+                var l=document.forms["iletisimsayfa"]["cinsiyet"].value
+
+
+                var mail = document.getElementById("email").value;
+	            var regex = /^[a-zA-Z0-9._-]+@([a-zA-Z0-9.-]+.)+([.])+[a-zA-Z0-9.-]{2,4}$/;
+
+                if(x=="" || y=="" || z=="" || k=="" || regex.test(mail)==false || l=="")  {
+                    alert("Bu Alanlar Bos birakilamamaz boş bırakmayiniz!")
+                    return true;
+                }
+                else{
+                    return false;
+                }
+            }
+
+
+     
+        </script>
+
+
+<hr><hr><hr>
+
+        <form name="iletisimsayfa" onsubmit=" validateForm() " action="iletisim2.html" >
+            İsim:
+            <input type="text" name="isim" ><br>    
+           <br>
+            Soyad:
+            <input type="text" name="soyisim" ><br>
+            <br>
+            Telefon:
+            <input type="text" name="telefonno"><br>
+            <br><br>
+
+            Tarih:
+            <input type="date" id="date" name="date">
+            <br><br>
+            Email:
+            
+            <input type="text" name="mail" id="email"><br>
+            <br><br>
+            Sayfa Hakkkındaki Yorum:
+            <textarea name="yorumsatiri" cols="30" rows="10"></textarea>
+            <br><br>
+            <input type="radio" name="cinsiyet">Erkek<br>
+            <input type="radio" name="cinsiyet" >Kadın<br>
+            <input type="reset" name="resetle">
+
+            <input type="submit" value="Gönder" >
+
+        </form>
+        <hr><hr><hr>
+<br><br>
+
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+
+
+
+
+    </body>
+
+</html>

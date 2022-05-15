@@ -1,0 +1,176 @@
+body{
+    background-color: rgb(188, 240, 244);   
+    margin-left: 150px;
+    margin-right: 150px;
+
+}
+img{
+    border: 9px solid rgb(2, 2, 2);
+}
+
+p::first-letter{
+
+font-size: 40px;
+font-weight: 500;
+color:burlywood
+
+}
+
+
+mark{
+    background-color: aqua;
+    border:3px solid rgb(37, 33, 33);
+}
+
+
+
+
+  p{
+      padding: 15px;
+      text-indent: 45px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: x-large;
+      font-weight: 200;
+      outline: 8px solid white;
+
+  }
+  p:hover{
+      background-color: rgb(130, 131, 131);
+      color:azure
+      
+     
+  }
+  div{
+      word-break: break-all;
+  }
+
+
+
+
+.menu{
+    text-align: center;
+    
+    background: linear-gradient(124deg, rgba(34,193,195,1) 11%, rgba(201,209,114,1) 85%, rgba(219,230,38,1) 100%);
+
+    border-radius: 300px;
+    
+    border: 9px solid white;
+
+
+}
+
+ul{
+    font-size: 25px;
+}
+
+
+
+.yazi::before{
+    content: attr(date-hide);
+    color:darkgreen;
+}
+
+.checkbox{
+    display: none;
+    background-color: darkgreen;
+
+}
+
+.checkbox:checked+.yazi::before{
+    content: attr(date-show);
+    color:darkgreen;
+
+}
+.checkbox:checked+.yazi+ .menu{
+    display: none; 
+}
+
+
+a{
+    color: rgb(45, 57, 57);
+}
+
+
+nav{
+    
+    background: rgb(238,174,202);
+    background: rgb(174,215,238);
+    background: linear-gradient(264deg, rgba(174,215,238,1) 9%, rgba(255,255,255,0.21922272326899506) 54%, rgba(41,218,171,0.21922272326899506) 95%);    border: 10px double wheat;
+    width: 40%;
+    display: block;
+}
+
+
+
+aside{
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slider{
+    position: relative;
+    width: 612px;
+    height: 408x;
+    border:1px solid #ccc;  
+    margin: auto;
+
+
+}
+
+.slider-content{
+    position: absolute;
+    width: 400%;
+    left: 0;
+    animation: slide 15s infinite;
+}
+
+.slider-item{
+    width: 25%;
+    float: left;
+}
+
+
+@keyframes slide{
+
+    0%{
+        transform: translateX(0px) ;
+    }
+    10%{
+        transform: translateX(-618) ;
+    }
+    20%{
+        transform: translateX(-618px) ;
+    }
+    30%{
+        transform: translateX(-1236px) ;
+    }
+    40%{
+        transform: translateX(-1236px) ;
+    }
+    50%{
+        transform: translateX(-1854px) ;
+    }
+    60%{
+        transform: translateX(-1854px) ;
+    }
+    70%{
+        transform: translateX(0px) ;
+    }
+   
+    
+  
+ 
+  
+
+}
